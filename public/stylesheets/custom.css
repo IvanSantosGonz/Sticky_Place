@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #cff;
+  background: #D4FF5B;
 }
 
 header {
@@ -92,6 +92,8 @@ a.signup_button {
   padding: 20px;
 }
 
+
+
 /* Round corners */
 
 .round {
@@ -100,7 +102,84 @@ a.signup_button {
   border-radius:         10px;
 }
 
+.bot{
+	float: right;
+   border-radius: 10px;
+	background:#D4FF5B; 
+	border-style:solid;
+	border-color:#000;	
+	border-width:medium;
+	text-align:center;
+ 	display: block;
+   width: 350px;
+	height: 60px;
+   font-size: 150%;
+   font-weight: bold;
+   padding: 10px;
 
+
+}
+
+.desc{
+	float: left;
+   border-radius: 10px;
+	background:#D4FF5B; 
+	border-style:solid;
+	border-color:#000;	
+	border-width:medium;
+	text-align:center;
+ 	display: block;
+   width: 250px;
+	height: 300px;
+   font-size: 150%;
+   font-weight: bold;
+   padding: 10px;
+
+}
+
+.botones{
+	position: relative;
+	right: -20px;
+	top: -20px;
+	display: inline-block;
+	
+}
+.regs{
+	position: relative;
+	right: -20px;
+	top: -10px;
+	display: inline-block;
+	padding: 10px;
+	
+}
+
+.bloq{
+	position: relative;
+	right: -20px;
+	top: 20px;
+	display: block;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+.botts{
+   border-radius: 10px;
+	background:#D4FF5B; 
+	border-style:solid;
+	border-color:#000;	
+	border-width:medium;
+	text-align:center;
+ 	display: block;
+   width: 100px;
+	height: 10px;
+   font-size: 70%;
+   font-weight: bold;
+   padding: 10px;
+	position: relative;
+
+}
 footer {
   text-align: center;
   margin-top: 10px;
