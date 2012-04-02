@@ -10,11 +10,19 @@
 #
 
 require 'spec_helper'
+require 'digest'
 
 describe User do
+  
   before(:each) do
-    @attr = { :name => "Example User", :email => "user@example.com" }
+    @attr = {
+      :name => "Example User",
+      :email => "user@example.com",
+      :password => "foobar",
+      :password_confirmation => "foobar"
+    }
   end
+
 
   it "should create a new instance given valid attributes" do
     User.create!(@attr)
@@ -68,7 +76,8 @@ describe User do
   
 
  describe "password validations" do
-
+   
+    
     it "should require a password" do
       User.new(@attr.merge(:password => "", :password_confirmation => "")).
         should_not be_valid
@@ -108,7 +117,11 @@ describe "password encryption" do
   end
   
   
-describe "has_password? method" do
+  describe "has_password? method" do
+    
+      before(:each) do
+         @user = User.create!(@attr)
+      end
 
       it "should be true if the passwords match" do
         @user.has_password?(@attr[:password]).should be_true
@@ -117,7 +130,7 @@ describe "has_password? method" do
       it "should be false if the passwords don't match" do
         @user.has_password?("invalid").should be_false
       end 
-    end
+  end
     
     
 describe "authenticate method" do
