@@ -873,3 +873,12 @@ Rendered layouts/_header.html.erb (0.6ms)
 Rendered layouts/_footer.html.erb (0.8ms)
 Rendered users/show.html.erb within layouts/application (7.1ms)
 Completed 200 OK in 139ms (Views: 10.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-04-10 09:59:53 +0100
+  Processing by PagesController#home as HTML
+Rendered layouts/_stylesheets.html.erb (2.5ms)
+Rendered layouts/_header.html.erb (1.0ms)
+Rendered layouts/_footer.html.erb (1.0ms)
+Rendered pages/home.html.erb within layouts/application (34.2ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
