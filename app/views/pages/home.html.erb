@@ -1,26 +1,16 @@
-<link rel="STYLESHEET" type="text/css" href="960-grid-system/code/css/960.css">
-<div>
-		<p class= bot> ¿No eres un Sticky User aún? 
-		<br>Registrate
+<div class="container_12">
+	<div class=" grid_4 suffix_2">
+		<p class= desc> 
+			¿No eres un Sticky User aún? 
+			<br><%= link_to "Registrate", signin_path %></li>
 		</p>
+	</div>
+	<div class= "grid_6">
 
-		<p class= desc> Descripcion 
+		<p class= desc> 
+			Descripcion 
 		</p>
-		</div>
-		<div class = botones>
-		   <p class= botts> Nombre </p>
-			<p class= botts>  Apellido </p>
-			<p class= botts>  Email </p>
-			<p class= botts>  Contraseña </p>
-			<p class= botts>  Repetir contraseña </p>
-		</div>
-		<div class = botones>
-			<form class= regs> 
-				<input type="text" name="nombre" class = bloq > 
-				<input type="text" name="apellido" class = bloq> 
-				<input type="text" name="email" class = bloq> 
-				<input type="password" name="contraseña" class = bloq >
-				<input type="password" name="repetir contraseña" class = bloq >
-				<input type="submit" value="Enviar" class = bloq> 
-			</form>
-		</div>
+	</div>
+<div class="clear"></div> 
+</div>
+	

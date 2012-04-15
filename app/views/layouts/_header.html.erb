@@ -1,12 +1,24 @@
+<div class="container_12">
+
 <header>
-  <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
-  <%= link_to logo, root_path %>
-  <nav class="round">
-		<form> 
-			<input type="text" name="email"  value= "email "> 
-			<input type="password" name="contraseña"  value= "contraseña ">
-			<input type="submit" value="Enviar"> 
-		</form>
-    </ul>
-  </nav>
+	<div id="logo" class="grid_6  ">
+
+  		<% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+  		<%= link_to logo, root_path %>
+	</div>
+
+	<div class="grid_3">	
+  		<nav class="round">
+  			<ul>
+				<li><%= link_to "Home", root_path %></li>
+				<li><%= link_to "Sign in", signin_path %></li>
+				<li><%= link_to "Help", help_path %></li>
+
+			</ul>
+  		</nav>
+	</div>
+ 		
 </header>
+<div class="clear"></div> 
+</div> 		
+

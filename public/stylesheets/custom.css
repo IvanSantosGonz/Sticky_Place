@@ -1,6 +1,3 @@
-.container {
-  width: 710px;
-}
 
 body {
   background: #D4FF5B;
@@ -22,9 +19,6 @@ section {
   background: #fff;
 }
 
-section h1 {
-  font-size: 200%;
-}
 
 /* Links */
 
@@ -44,14 +38,12 @@ a:visited {
 
 /* Navigation */
 
-nav {
-  float: right;
-}
 
 nav {
   background-color: white;
   padding: 0 0.7em;
   white-space: nowrap;
+  padding: 0.2em
 }
 
 nav ul {
@@ -62,7 +54,7 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0.2em 0;
+  padding: 0.5em ;
 }
 
 nav ul li a {
@@ -102,23 +94,7 @@ a.signup_button {
   border-radius:         10px;
 }
 
-.bot{
-	float: right;
-   border-radius: 10px;
-	background:#D4FF5B; 
-	border-style:solid;
-	border-color:#000;	
-	border-width:medium;
-	text-align:center;
- 	display: block;
-   width: 350px;
-	height: 60px;
-   font-size: 150%;
-   font-weight: bold;
-   padding: 10px;
 
-
-}
 
 .desc{
 	float: left;
@@ -129,21 +105,14 @@ a.signup_button {
 	border-width:medium;
 	text-align:center;
  	display: block;
-   width: 250px;
+    width: 400px;
 	height: 300px;
-   font-size: 150%;
-   font-weight: bold;
-   padding: 10px;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 10px;
 
 }
 
-.botones{
-	position: relative;
-	right: -20px;
-	top: -20px;
-	display: inline-block;
-	
-}
 .regs{
 	position: relative;
 	right: -20px;
@@ -155,8 +124,6 @@ a.signup_button {
 
 .bloq{
 	position: relative;
-	right: -20px;
-	top: 20px;
 	display: block;
 	padding: 10px;
 	margin: 10px;
@@ -164,32 +131,13 @@ a.signup_button {
 
 
 
-.botts{
-   border-radius: 10px;
-	background:#D4FF5B; 
-	border-style:solid;
-	border-color:#000;	
-	border-width:medium;
-	text-align:center;
- 	display: block;
-   width: 100px;
-	height: 10px;
-   font-size: 70%;
-   font-weight: bold;
-   padding: 10px;
-	position: relative;
-
-}
 footer {
   text-align: center;
   margin-top: 10px;
-  width: 710px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 footer nav {
-  float: none;
 }
 
 /* User show page */
