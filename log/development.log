@@ -3043,3 +3043,10 @@ Rendered layouts/_header.html.erb (0.9ms)
 Rendered layouts/_footer.html.erb (0.6ms)
 Rendered pages/contact.html.erb within layouts/application (4.6ms)
 Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+Parameters: {"commit"=>"Sign up", "action"=>"create",
+"authenticity_token"=>"K1HchFF8uYE8ZaQKz5DVG9vF2KGoXJu4JGp/VE3NMjA=",
+"controller"=>"users",
+  "user"=>{"name"=>"Foo Bar", "password_confirmation"=>"[FILTERED]",
+           "password"=>"[FILTERED]", "email"=>"foo@invalid"}
+           
