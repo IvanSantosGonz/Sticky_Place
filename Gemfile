@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
 
+gem 'rake', '0.8.7'
 gem 'rails', '3.0.0'
 gem 'sqlite3', '1.3.5'
 gem 'annotate', '2.4.0'

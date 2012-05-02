@@ -1,3 +1,4 @@
+/* Controlador de los Micropost */
 class MicropostsController < ApplicationController
 
   before_filter :authenticate, :only => [:create, :destroy]
