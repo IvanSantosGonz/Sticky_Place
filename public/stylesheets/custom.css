@@ -1,16 +1,12 @@
 
 body {
-  background: #D4FF5B;
 }
+
 
 header {
-  padding-top: 20px;
+	background-color:red;
 }
 
-header img {
-  padding: 1em;
-  background: #fff;
-}
 
 section {
   margin-top: 1em;
@@ -19,7 +15,10 @@ section {
   background: #fff;
 }
 
-
+#logo {
+	width: 10%;
+	height: 10%;
+}
 /* Links */
 
 a {
