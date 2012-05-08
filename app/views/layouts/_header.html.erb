@@ -1,34 +1,27 @@
-<div class="page-header">
-	
-<div class="container-fluid>
-	
-	<div class="row-fluid">
-		<h1>
-		<div id="logo" class="span6 offset3 ">
-			
+<header>
+	<div class="container_12">  
+   		<div class="grid_3">
 			<%= link_to logo, root_path %>
 		</div>
-		<div class="span3 offset3">	
+		<div class="grid_3 push_6 round">
   			<nav>
-  				<div class="round">
   					<ul>
 						<li><%= link_to "Home", root_path %></li>
 							<% if signed_in? %>
-					 	  <li><%= link_to "Profile", current_user %></li>
-					 	  <li><%= link_to "Settings", edit_user_path(current_user) %></li>
-					 	  <li><%= link_to "Users", users_path %></li>
-						<% end %>
+					 			<li><%= link_to "Profile", current_user %></li>
+					 	 		<li><%= link_to "Settings", edit_user_path(current_user) %></li>
+					 	  		<li><%= link_to "Users", users_path %></li>
+							<% end %>
 						<li><%= link_to "Help", help_path %></li>
-						<% if signed_in? %>
-							<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-						<% else %>
-							<li><%= link_to "Sign in", signin_path %></li>
-						<% end %>
-					</ul>
+							<% if signed_in? %>
+								<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+							<% else %>
+								<li><%= link_to "Sign in", signin_path %></li>
+							<% end %>
+					 </ul>
 				</div>
  			</nav>
-		</div>
-		</h1>
 	</div>
-</div>
-</div>
+	<div class="clear"></div>
+</header>
+		

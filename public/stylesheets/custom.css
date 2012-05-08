@@ -4,7 +4,10 @@ body {
 
 
 header {
-	background-color:red;
+	background-image:url("/../images/header.png");
+	background-attachment: scroll;
+	background-repeat: inherit;
+	background-size: 24.5em;
 }
 
 
@@ -16,8 +19,8 @@ section {
 }
 
 #logo {
-	width: 10%;
-	height: 10%;
+	width: 40%;
+	height: 40%;
 }
 /* Links */
 
@@ -27,22 +30,19 @@ a {
 }
 
 a:hover {
-  color: #069;
   text-decoration: underline;
+  color: #069;
 }
 
-a:visited {
-  color: #069;
-}
+
 
 /* Navigation */
 
 
 nav {
-  background-color: white;
-  padding: 0 0.7em;
+  margin: 0.5em;
   white-space: nowrap;
-  padding: 0.2em
+  border-radius: 10px;
 }
 
 nav ul {
@@ -59,14 +59,14 @@ nav ul li {
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
+  color:#D4FF5B;
 }
 
-nav ul li a:visited {
-  color: #09c;
-}
 
 nav ul li a:hover {
   text-decoration: underline;
+  color: #AAFF5B;
+  
 }
 /* Sign up button */
 
