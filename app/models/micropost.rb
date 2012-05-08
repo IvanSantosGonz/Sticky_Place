@@ -1,4 +1,4 @@
-/* Modelo de microposts */
+# Modelo de microposts 
 class Micropost < ActiveRecord::Base
   attr_accessible :content
   

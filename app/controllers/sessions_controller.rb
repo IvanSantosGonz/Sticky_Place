@@ -1,4 +1,4 @@
-/*Controladores de las sesiones*/
+# Controladores de las sesiones
 class SessionsController < ApplicationController
 
   def new

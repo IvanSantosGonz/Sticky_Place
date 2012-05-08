@@ -1,4 +1,4 @@
-/* Controladores de las paginas */
+# Controladores de las paginas
 class PagesController < ApplicationController
 
    def home
