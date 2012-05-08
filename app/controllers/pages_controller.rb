@@ -1,7 +1,7 @@
 # Controladores de las paginas
 class PagesController < ApplicationController
 
-   def home
+ def home
     @title = "Home"
     if signed_in?
       @micropost = Micropost.new
