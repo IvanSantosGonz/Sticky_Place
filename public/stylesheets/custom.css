@@ -6,7 +6,7 @@ body {
 header {
 	background-image:url("/../images/header.png");
 	background-attachment: scroll;
-	background-repeat: inherit;
+	background-repeat: repeat-x;
 	background-size: 24.5em;
 }
 
@@ -21,6 +21,15 @@ section {
 #logo {
 	width: 40%;
 	height: 40%;
+}
+
+
+.enviar{
+	background-color: #99cc33;
+	color:#000077;
+	font-family:"Verdana, Geneva, Arial, Helvetica, sans-serif"
+	font-weight: bold;
+    border-radius: 8px;
 }
 /* Links */
 
@@ -59,7 +68,7 @@ nav ul li {
 nav ul li a {
   padding: 0 5px;
   font-weight: bold;
-  color:#D4FF5B;
+  color:#99cc33;
 }
 
 
@@ -98,7 +107,7 @@ a.signup_button {
 .desc{
 	float: left;
    border-radius: 10px;
-	background:#D4FF5B; 
+	background:#99cc33; 
 	border-style:solid;
 	border-color:#000;	
 	border-width:medium;
