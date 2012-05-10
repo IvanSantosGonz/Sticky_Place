@@ -45,10 +45,33 @@ section {
 	position: fixed;
 	z-index: 2;
 	left: -50%;
-	top: 60%;
+	top: 65%;
 
 }
 
+
+
+#noria{
+	position: fixed;
+	z-index: 3;
+	top: 67%;
+	right: 20%;
+}
+
+#montaña_rusa{
+	position: fixed;
+	z-index: 3;
+	top: 62%;
+	left: 10%;
+}
+
+
+#carrito{
+	position: fixed;
+	z-index: 3;
+	top: 62%;
+	left: 10%;
+}
 #logo {
 	width: 40%;
 	height: 40%;
@@ -171,9 +194,20 @@ a.signup_button {
 
 
 footer {
-  position: fixed;
+  position:fixed;
   text-align: center;
-  margin-top: 10px;
+  bottom: 5%;
+  left: 15%;
+  z-index: 9;
+  
+}
+
+.debug {
+  position:fixed;
+  left: 65%;
+  bottom: 0%;
+  z-index: 9;
+  
 }
 
 footer nav {

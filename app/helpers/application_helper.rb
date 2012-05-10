@@ -13,10 +13,5 @@ module ApplicationHelper
    def logo
       image_tag("logo.png", :alt => "Sticky Place", :id => "logo")
    end
-   def fair
-      image_tag("fair.png", :alt => "casa y tierra", :id => "fair")
-   end
-   def first
-      image_tag("first.png", :alt => "Imagen base", :id => "base")
-   end
+
 end
