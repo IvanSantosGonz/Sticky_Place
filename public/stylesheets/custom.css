@@ -1,14 +1,21 @@
 
 body {
-}
+	background-color: #4ecdc4;
+	background-image:url("/images/fondo.png");
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	z-index: 0;
+	}
 
 
 header {
-	background-image:url("/../images/header.png");
+	background-image:url("/images/header.png");
 	background-attachment: scroll;
 	background-repeat: repeat-x;
 	background-size: 24.5em;
+
 }
+
 
 
 section {
@@ -16,6 +23,30 @@ section {
   font-size: 120%;
   padding: 20px;
   background: #fff;
+}
+
+
+#fondo{
+	position: static;
+	z-index: 0;
+	}
+
+
+
+#base{
+	position: fixed;
+	z-index: 1;
+	left: 0%;
+	top: 35%;
+
+}
+
+#fair{
+	position: fixed;
+	z-index: 2;
+	left: -50%;
+	top: 60%;
+
 }
 
 #logo {
@@ -27,7 +58,7 @@ section {
 .enviar{
 	background-color: #99cc33;
 	color:#000077;
-	font-family:"Verdana, Geneva, Arial, Helvetica, sans-serif"
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-weight: bold;
     border-radius: 8px;
 }
@@ -140,9 +171,9 @@ a.signup_button {
 
 
 footer {
+  position: fixed;
   text-align: center;
   margin-top: 10px;
-
 }
 
 footer nav {
