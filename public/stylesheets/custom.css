@@ -13,7 +13,6 @@ header {
 	background-attachment: scroll;
 	background-repeat: repeat-x;
 	background-size: 24.5em;
-
 }
 
 
@@ -37,7 +36,7 @@ section {
 	position: fixed;
 	z-index: 1;
 	left: 0%;
-	top: 35%;
+	top: 20%;
 
 }
 
