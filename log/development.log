@@ -52354,3 +52354,419 @@ ActionController::RoutingError (No route matches "/images/noria.jpg"):
   
 
 Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 20:31:36 +0100
+  Processing by PagesController#home as HTML
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[36mMicropost Load (1.9ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1)) AS subquery
+Rendered shared/_error_messages.html.erb (0.7ms)
+Rendered shared/_micropost_form.html.erb (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered shared/_feed_item.html.erb (116.1ms)
+Rendered shared/_feed.html.erb (118.2ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 1)) AS subquery[0m
+Rendered shared/_user_info.html.erb (6.9ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 1))
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 1))[0m
+Rendered shared/_stats.html.erb (22.8ms)
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (2.2ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/home.html.erb within layouts/application (170.0ms)
+Completed 200 OK in 315ms (Views: 172.5ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 20:31:37 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 20:32:31 +0100
+  Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[36mMicropost Load (2.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1)) AS subquery
+ERROR: compiling _app_views_shared__micropost_form_html_erb___507038320_98377290__103653366 RAISED /home/alexandra/Escritorio/Sticky_Final/Sticky_Place/app/views/shared/_micropost_form.html.erb:7: syntax error, unexpected ':', expecting ')'
+...r.append= ( f.submit "Submit" :class => "enviar" );@output_b...
+...                               ^
+Function body:           def _app_views_shared__micropost_form_html_erb___507038320_98377290__103653366(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "shared/_micropost_form";_old_output_buffer = @output_buffer;micropost_form = local_assigns[:micropost_form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for @micropost do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( render 'shared/error_messages', :object => f.object );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.text_area :content );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="actions" >
+    ');@output_buffer.append= ( f.submit "Submit" :class => "enviar" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end ;@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:255:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:255:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:134:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:294:in `render_partial'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:223:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:221:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:334:in `_render_partial'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:31:in `render'
+/home/alexandra/Escritorio/Sticky_Final/Sticky_Place/app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb___787244204_98417180_930173279'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:135:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:92:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:435:in `_run__1056462707__process_action__13519820__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:40:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal.rb:133:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal.rb:173:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered shared/_micropost_form.html.erb (23.5ms)
+Rendered pages/home.html.erb within layouts/application (25.9ms)
+Completed   in 116ms
+
+ActionView::Template::Error (/home/alexandra/Escritorio/Sticky_Final/Sticky_Place/app/views/shared/_micropost_form.html.erb:7: syntax error, unexpected ':', expecting ')'
+...r.append= ( f.submit "Submit" :class => "enviar" );@output_b...
+...                               ^):
+    4:     <%= f.text_area :content %>
+    5:   </div>
+    6:   <div class="actions" >
+    7:     <%= f.submit "Submit" :class => "enviar" %>
+    8:   </div>
+    9: <% end %>
+  app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb___787244204_98417180_930173279'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (32.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 20:32:33 +0100
+  Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[35mMicropost Load (2.0ms)[0m  SELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1)) AS subquery[0m
+ERROR: compiling _app_views_shared__micropost_form_html_erb___507038320_95422960__103653366 RAISED /home/alexandra/Escritorio/Sticky_Final/Sticky_Place/app/views/shared/_micropost_form.html.erb:7: syntax error, unexpected ':', expecting ')'
+...r.append= ( f.submit "Submit" :class => "enviar" );@output_b...
+...                               ^
+Function body:           def _app_views_shared__micropost_form_html_erb___507038320_95422960__103653366(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "shared/_micropost_form";_old_output_buffer = @output_buffer;micropost_form = local_assigns[:micropost_form];;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.append=  form_for @micropost do |f| @output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( render 'shared/error_messages', :object => f.object );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  <div class="field">
+    ');@output_buffer.append= ( f.text_area :content );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+  <div class="actions" >
+    ');@output_buffer.append= ( f.submit "Submit" :class => "enviar" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  </div>
+'); end ;@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:255:in `module_eval'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:255:in `compile'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:134:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:294:in `render_partial'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:223:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:221:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/partials.rb:334:in `_render_partial'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:31:in `render'
+/home/alexandra/Escritorio/Sticky_Final/Sticky_Place/app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb___787244204_95594100_930173279'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:135:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:54:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/template.rb:127:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:59:in `block in _render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:56:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_view/render/rendering.rb:26:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:92:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:17:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:150:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:435:in `_run__1056462707__process_action__13519820__callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `block in instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/notifications.rb:52:in `instrument'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/base.rb:119:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/abstract_controller/rendering.rb:40:in `process'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal.rb:133:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_controller/metal.rb:173:in `block in action'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:148:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:93:in `block in recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:68:in `optimized_each'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/code_generation.rb:92:in `recognize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-mount-0.6.14/lib/rack/mount/route_set.rb:139:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/cookies.rb:287:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:32:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:12:in `cache'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/query_cache.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activerecord-3.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:355:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:46:in `block in call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/sendfile.rb:106:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/rack/logger.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/runtime.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/activesupport-3.0.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/lock.rb:13:in `block in call'
+<internal:prelude>:10:in `synchronize'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/lock.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/static.rb:30:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/application.rb:168:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/application.rb:77:in `method_missing'
+/usr/local/lib/ruby/gems/1.9.1/gems/railties-3.0.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.9.1/gems/rack-1.2.5/lib/rack/handler/webrick.rb:52:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered shared/_micropost_form.html.erb (1.1ms)
+Rendered pages/home.html.erb within layouts/application (3.7ms)
+Completed   in 101ms
+
+ActionView::Template::Error (/home/alexandra/Escritorio/Sticky_Final/Sticky_Place/app/views/shared/_micropost_form.html.erb:7: syntax error, unexpected ':', expecting ')'
+...r.append= ( f.submit "Submit" :class => "enviar" );@output_b...
+...                               ^):
+    4:     <%= f.text_area :content %>
+    5:   </div>
+    6:   <div class="actions" >
+    7:     <%= f.submit "Submit" :class => "enviar" %>
+    8:   </div>
+    9: <% end %>
+  app/views/pages/home.html.erb:8:in `_app_views_pages_home_html_erb___787244204_95594100_930173279'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 20:32:51 +0100
+  Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[36mMicropost Load (2.0ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 1) OR user_id = 1)) AS subquery
+Rendered shared/_error_messages.html.erb (0.7ms)
+Rendered shared/_micropost_form.html.erb (6.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered shared/_feed_item.html.erb (58.9ms)
+Rendered shared/_feed.html.erb (61.0ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 1)) AS subquery[0m
+Rendered shared/_user_info.html.erb (6.9ms)
+  [1m[35mSQL (2.7ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 1))
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 1))[0m
+Rendered shared/_stats.html.erb (68.7ms)
+Rendered layouts/_stylesheets.html.erb (1.0ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Rendered pages/home.html.erb within layouts/application (159.0ms)
+Completed 200 OK in 254ms (Views: 158.9ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 20:32:51 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.3ms)
