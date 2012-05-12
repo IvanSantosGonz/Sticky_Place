@@ -1,4 +1,7 @@
 
+#global {width:1400px; margin:4px auto;}
+
+
 body {
 	background-color: #4ecdc4;
 	background-image:url("/images/fondo.png");
@@ -9,6 +12,7 @@ body {
 
 
 header {
+	position: relative;
 	background-image:url("/images/header.png");
 	background-attachment: scroll;
 	background-repeat: repeat-x;
@@ -27,14 +31,14 @@ section {
 
 #fondo{
 	position: static;
-	z-index: 0;
+	z-index: -5;
 	}
 
 
 
 #base{
 	position: fixed;
-	z-index: 1;
+	z-index: -4;
 	left: 0%;
 	top: 20%;
 
@@ -42,7 +46,7 @@ section {
 
 #fair{
 	position: fixed;
-	z-index: 2;
+	z-index: -3;
 	left: -50%;
 	top: 65%;
 
@@ -52,14 +56,14 @@ section {
 
 #noria{
 	position: fixed;
-	z-index: 3;
+	z-index: -2;
 	top: 67%;
 	right: 20%;
 }
 
 #montaña_rusa{
 	position: fixed;
-	z-index: 3;
+	z-index: -2;
 	top: 62%;
 	left: 10%;
 }
@@ -67,7 +71,7 @@ section {
 
 #carrito{
 	position: fixed;
-	z-index: 3;
+	z-index: -2;
 	top: 62%;
 	left: 10%;
 }
@@ -96,7 +100,9 @@ a:hover {
   color: #069;
 }
 
-
+#signup{
+	position: fixed;
+}
 
 /* Navigation */
 
@@ -225,10 +231,28 @@ td.main {
 }
 
 td.sidebar {
+	
   width: 30%;
-  padding: 1em;
+  padding: 3em;
   vertical-align: top;
-  background: #ffc;
+}
+
+#post-it_home{
+	position: absolute;
+	z-index: -1;
+	right: 20.5%;
+	top: 8%;
+	width: 15%; 
+	height: 25%;
+}
+
+#post-it_profile{
+	position: absolute;
+	z-index: -1;
+	right: 14.5%;
+	top: 8%;
+	width: 15%; 
+	height: 25%;
 }
 
 .profile img.gravatar {
