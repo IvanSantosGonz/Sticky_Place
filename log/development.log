@@ -51300,3 +51300,229 @@ Rendered layouts/_header.html.erb (1.6ms)
 Rendered layouts/_footer.html.erb (0.7ms)
 Rendered pages/home.html.erb within layouts/application (7.0ms)
 Completed 200 OK in 44ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 19:48:48 +0100
+  Processing by PagesController#home as HTML
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 107) LIMIT 1
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[36mMicropost Load (0.4ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 107) OR user_id = 107) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (1.1ms)
+Rendered shared/_micropost_form.html.erb (8.8ms)
+Rendered shared/_feed.html.erb (0.8ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 107)) AS subquery
+Rendered shared/_user_info.html.erb (8.4ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 107))[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 107))
+Rendered shared/_stats.html.erb (29.0ms)
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+Rendered layouts/_header.html.erb (3.5ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered pages/home.html.erb within layouts/application (83.6ms)
+Completed 200 OK in 277ms (Views: 88.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:48:48 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 19:48:52 +0100
+  Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 107) LIMIT 1[0m
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[35mMicropost Load (0.4ms)[0m  SELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 107) OR user_id = 107) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.9ms)
+Rendered shared/_micropost_form.html.erb (7.3ms)
+Rendered shared/_feed.html.erb (0.6ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 107)) AS subquery[0m
+Rendered shared/_user_info.html.erb (6.0ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 107))
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 107))[0m
+Rendered shared/_stats.html.erb (25.4ms)
+Rendered layouts/_stylesheets.html.erb (0.6ms)
+Rendered layouts/_header.html.erb (2.7ms)
+Rendered layouts/_footer.html.erb (1.1ms)
+Rendered pages/home.html.erb within layouts/application (53.2ms)
+Completed 200 OK in 141ms (Views: 56.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:48:52 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:48:54 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 19:49:48 +0100
+  Processing by PagesController#home as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 107) LIMIT 1
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[36mMicropost Load (0.3ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 107) OR user_id = 107) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (0.8ms)
+Rendered shared/_micropost_form.html.erb (7.1ms)
+Rendered shared/_feed.html.erb (0.5ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 107)) AS subquery
+Rendered shared/_user_info.html.erb (6.8ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 107))[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 107))
+Rendered shared/_stats.html.erb (24.6ms)
+Rendered layouts/_stylesheets.html.erb (0.8ms)
+Rendered layouts/_header.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (1.2ms)
+Rendered pages/home.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 149ms (Views: 57.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:49:49 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:49:51 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.8ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:49:54 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 19:50:37 +0100
+  Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 107) LIMIT 1[0m
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[35mMicropost Load (0.3ms)[0m  SELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 107) OR user_id = 107) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.6ms)
+Rendered shared/_micropost_form.html.erb (6.5ms)
+Rendered shared/_feed.html.erb (0.4ms)
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 107)) AS subquery[0m
+Rendered shared/_user_info.html.erb (6.3ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 107))
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 107))[0m
+Rendered shared/_stats.html.erb (25.3ms)
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (3.1ms)
+Rendered layouts/_footer.html.erb (1.5ms)
+Rendered pages/home.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 154ms (Views: 56.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:50:37 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:50:40 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 19:51:28 +0100
+  Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 107) LIMIT 1
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[36mMicropost Load (0.4ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 107) OR user_id = 107) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+Rendered shared/_error_messages.html.erb (0.8ms)
+Rendered shared/_micropost_form.html.erb (8.4ms)
+Rendered shared/_feed.html.erb (0.6ms)
+  [1m[35mSQL (0.2ms)[0m  SELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 107)) AS subquery
+Rendered shared/_user_info.html.erb (7.6ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 107))[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 107))
+Rendered shared/_stats.html.erb (27.6ms)
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (3.4ms)
+Rendered layouts/_footer.html.erb (1.4ms)
+Rendered pages/home.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 165ms (Views: 65.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:51:28 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:51:34 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:51:35 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-05-12 19:51:53 +0100
+  Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 107) LIMIT 1[0m
+Creating scope :from_users_followed_by. Overwriting existing method Micropost.from_users_followed_by.
+  [1m[35mMicropost Load (0.3ms)[0m  SELECT "microposts".* FROM "microposts" WHERE (user_id IN (SELECT followed_id FROM relationships
+ WHERE follower_id = 107) OR user_id = 107) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0
+Rendered shared/_error_messages.html.erb (0.5ms)
+Rendered shared/_micropost_form.html.erb (5.9ms)
+Rendered shared/_feed.html.erb (0.4ms)
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT COUNT(*) AS count_id FROM (SELECT 1 FROM "microposts" WHERE ("microposts".user_id = 107)) AS subquery[0m
+Rendered shared/_user_info.html.erb (7.1ms)
+  [1m[35mSQL (0.3ms)[0m  SELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".followed_id WHERE (("relationships".follower_id = 107))
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT COUNT(*) AS count_id FROM "users" INNER JOIN "relationships" ON "users".id = "relationships".follower_id WHERE (("relationships".followed_id = 107))[0m
+Rendered shared/_stats.html.erb (26.4ms)
+Rendered layouts/_stylesheets.html.erb (0.7ms)
+Rendered layouts/_header.html.erb (2.8ms)
+Rendered layouts/_footer.html.erb (39.7ms)
+Rendered pages/home.html.erb within layouts/application (93.3ms)
+Completed 200 OK in 148ms (Views: 96.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/images/noria.jpg" for 127.0.0.1 at 2012-05-12 19:51:54 +0100
+
+ActionController::RoutingError (No route matches "/images/noria.jpg"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)

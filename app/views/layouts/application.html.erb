@@ -12,7 +12,9 @@
       <%= render 'layouts/header' %>
       	<img src="/images/first.png" alt="fondo base" id= "base" />	
 		<img src="/images/fair.png" alt="casa y tierra" id= "fair" />
-		<img src="/images/noria.gif" alt="noria" id= "noria" />
+		<img id="noria" src="/images/noria.jpg" alt="noria" 
+	            onmouseover= src="/images/noria.gif" alt="noria" id = "noria"   
+                onmouseout= src='/images/noria.png'  />
 		<img src="/images/carrito.gif" alt="carrito de montaña rusa" id= "carrito" />
 		<img src="/images/montaña_rusa.png" alt="montaña rusa" id= "montaña_rusa" />
       <% flash.each do |key, value| %>
