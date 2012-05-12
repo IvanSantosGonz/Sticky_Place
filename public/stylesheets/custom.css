@@ -28,7 +28,9 @@ section {
   background: #fff;
 }
 
-
+h1{
+	text-align: center;
+}
 #fondo{
 	position: static;
 	z-index: -5;
@@ -81,15 +83,22 @@ section {
 }
 
 
-#id{
-	position: absolute;
-	left: 0%;
+#header_form{
+	padding-top: 0.5px;
 }
 
-.formulario{
-	text-align: left;
-	display:table-row-group;
+.form{
+	padding-left: 30%;	
+	display:block;
 }
+
+
+.formulario{
+	padding-left: 63%;
+}
+
+
+
 
 .enviar{
 	background-color: #99cc33;
@@ -97,6 +106,12 @@ section {
 	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 	font-weight: bold;
     border-radius: 8px;
+}
+
+.field{
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
 }
 /* Links */
 
@@ -281,19 +296,26 @@ div.field, div.actions {
 
 .field_with_errors {
   margin-top: 10px;
-  padding: 2px;
-  background-color: red;
+  padding: 0.5px;
   display: table;
 }
 
 .field_with_errors label {
-  color: #fff;
 }
+
+.error{
+	position:absolute;
+	left: 20%;
+	padding-left: 7px;
+}
+
 
 #error_explanation {
   width: 400px;
   border: 2px solid red;
-  padding: 7px;
+   -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
   padding-bottom: 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
@@ -302,22 +324,29 @@ div.field, div.actions {
 #error_explanation h2 {
   text-align: left;
   font-weight: bold;
-  padding: 5px 5px 5px 15px;
+  padding: 5px 5px 5px 5px;
   font-size: 12px;
   margin: -7px;
+  width: 398px;
   background-color: #c00;
   color: #fff;
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
 }
 
 #error_explanation p {
   color: #333;
-  margin-bottom: 0;
+  margin-bottom: 2px;
   padding: 5px;
+  font:"Arial Black";
+  
 }
 
 #error_explanation ul li {
-  font-size: 12px;
+  font-size: 16px;
   list-style: square;
+  font:"Courier New", Courier, monospace;
 }
 
 /* all user's view */

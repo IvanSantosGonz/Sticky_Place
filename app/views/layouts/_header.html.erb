@@ -15,11 +15,11 @@
 							<% if signed_in? %>
 								<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
 							<% else %>
-								<li >
+								<li id = "header_form" >
 									<%= form_for(:session, :url => sessions_path) do |f| %>
 		
-										<%= f.text_field :email, :placeholder => "email" , :style=>'width: 100px' %>
-										<%= f.password_field :password,:placeholder => "password" , :style=>'width: 100px' %>
+										<%= f.text_field :email, :placeholder => "email" , :style=>'width: 140px' ,:class => "field"%>
+										<%= f.password_field :password,:placeholder => "password" , :style=>'width: 140px',:class => "field" %>
 					
 										<%= f.submit "Sign in", :class => "enviar" %>
 									<% end %>
