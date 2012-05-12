@@ -8,9 +8,11 @@ class UsersController < ApplicationController
   before_filter :admin_user,   :only => :destroy
   #before_filter :authenticate, :except => [:show, :new, :create]
  	
+ 
+ 	
 	def index
     @title = "All users"
-    @users = User.paginate( :page => params[:page])
+    @users = User.paginate( :page => params[:page],:per_page => 15)
   end
 
  	def show

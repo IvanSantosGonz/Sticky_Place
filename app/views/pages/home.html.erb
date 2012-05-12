@@ -21,7 +21,32 @@
 				¿No eres un Sticky User aún? 
 				<br><%= link_to "Registrate", signup_path %></li>
 			</p>
+			<div class= "grid_3 push_8 formulario">
+				<%= form_for(:user, :url => users_path) do |f| %>
 
-<% end %>
+  					<div class="field">
+    					<%= f.label :name %><br />
+  						<%= f.text_field :name , :placeholder => "Your name" , :style=>'width: 140px'%>
+  					</div>
+  					<div class="field">
+   						 <%= f.label :email %><br />
+   						 <%= f.text_field :email , :placeholder => "Your email" , :style=>'width: 140px'%>
+  					</div>
+  					<div class="field">
+  						<%= f.label :password %><br />
+    					<%= f.password_field :password , :placeholder => "Your password" , :style=>'width: 140px'%>
+  					</div>
+  					<div class="field">
+    					<%= f.label :password_confirmation, "Confirmation" %><br />
+    					<%= f.password_field :password_confirmation , :placeholder => "repeat password" , :style=>'width: 140px'%>
+  					</div>
+  					<div class="actions">
+    					<%= f.submit "Sign up" ,:class => "enviar"%>
+  					</div>
+				<% end %>
+
+			</div>
+
+		<% end %>
 	<div class="clear"></div> 
 		

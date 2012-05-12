@@ -81,6 +81,16 @@ section {
 }
 
 
+#id{
+	position: absolute;
+	left: 0%;
+}
+
+.formulario{
+	text-align: left;
+	display:table-row-group;
+}
+
 .enviar{
 	background-color: #99cc33;
 	color:#000077;
