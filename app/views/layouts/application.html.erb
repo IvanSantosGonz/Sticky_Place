@@ -10,9 +10,14 @@
   <body>
   	  
       <%= render 'layouts/header' %>
-      	<img src="/images/first.png" alt="fondo base" id= "base" />	
+      
+        <button id="go">&raquo; Run</button>
+        <div id="block">Hello!</div>
+        
+      	<img src="/images/cloud0.png" alt="nube" id= "cloud" />	
+		<img src="/images/first.png" alt="fondo base" id= "base" />	
 		<img src="/images/fair.png" alt="casa y tierra" id= "fair" />
-		<img id="noria" src="/images/noria.jpg" alt="noria" 
+		<img id="noria" src="/images/noria.png" alt="noria" 
 	            onmouseover= src="/images/noria.gif" alt="noria" id = "noria"   
                 onmouseout= src='/images/noria.png'  />
 		<img src="/images/carrito.gif" alt="carrito de montaña rusa" id= "carrito" />
@@ -26,6 +31,7 @@
         <div class="debug">
 		<%= debug(params) if Rails.env.development? %>
 		</div>
+		  
   </body>
   </div>
 </html>
