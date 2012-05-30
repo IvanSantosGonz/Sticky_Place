@@ -7,6 +7,7 @@ gem 'annotate', '2.4.0'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'will_paginate', '3.0.pre2'
 gem "jquery-rails"
+gem 'paperclip'
 
 
 group :development do

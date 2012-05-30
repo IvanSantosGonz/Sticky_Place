@@ -2,7 +2,7 @@
 
 <div class = "formulario">
 
-<%= form_for(@user) do |f| %>
+<%= form_for(@user, :html => { :multipart => true } ) do |f| %>
 
    <%= render 'shared/error_messages', :object => f.object %>
   <div >
@@ -21,6 +21,9 @@
     <%= f.label :password_confirmation, "Confirmation" %><br/>
     <%= f.password_field :password_confirmation , :placeholder => "repeat password" , :style=>'width: 140px',:class => "field"%>
   </div>
+  <%= f.fields_for :photos do |photo_fields| %>
+	  	   <p><%= photo_fields.file_field :avatar %></p>
+  <% end %>
   <div class="actions">
     <%= f.submit "Sign up" ,:class => "enviar"%>
   </div>

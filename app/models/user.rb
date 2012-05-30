@@ -12,7 +12,7 @@
 class User < ActiveRecord::Base
 	
 	attr_accessor :password
-  attr_accessible :name, :email, :password, :password_confirmation
+  attr_accessible :name, :email, :password, :password_confirmation, :photos_attributes
   has_many :microposts, :dependent => :destroy
   
 	email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -44,6 +44,10 @@ class User < ActiveRecord::Base
                                    :dependent => :destroy
   has_many :followers, :through => :reverse_relationships, :source => :follower                        
                            
+  has_many :photos                         
+  accepts_nested_attributes_for :photos, :allow_destroy => true
+   
+   
   
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
