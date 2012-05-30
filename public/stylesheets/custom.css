@@ -8,7 +8,7 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: inherit;
 	background-position-x: 24%;
-	background-position-y: -35%;
+	background-position-y: 0%;
 	}
 
 
@@ -97,6 +97,7 @@ h1{
 	position : fixed;
 	left : 110%;
 	top : 10%;
+	z-index: -4;
 }
 
 
@@ -104,24 +105,28 @@ h1{
 	position : fixed;
 	left : 1070%;
 	top : 30%;
+	z-index: -4;
 }
 
 #cloud03{
 	position : fixed;
 	left : 90%;
 	top : 25%;
+	z-index: -4;
 }
 
 #cloud04{
 	position : fixed;
 	left : 10%;
 	top : 25%;
+	z-index: -4;
 }
 
 #cloud11{
 	position : fixed;
 	left : 550%;
 	top : 20%;
+	z-index: -4;
 }
 
 
@@ -129,13 +134,14 @@ h1{
 	position : fixed;
 	left : 150%;
 	top : 35%;
+	z-index: -4;
 }
 	
 #cloud13{
 	position : fixed;
 	left : 5%;
 	top : 15%;
-
+	z-index: -4;
 }
 
 
@@ -143,7 +149,7 @@ h1{
 	position : fixed;
 	left : 1300%;
 	top : 15%;
-
+	z-index: -4;
 }
 
 
@@ -152,7 +158,7 @@ h1{
 	position : fixed;
 	left : 990%;
 	top : 20%;
-
+	z-index: -4;
 }
 
 
@@ -160,13 +166,14 @@ h1{
 	position : fixed;
 	left : 440%;
 	top : 30%;
+	z-index: -4;
 }
 
 
 #cloud23{
 	position : fixed;
 	left : 840%;
-
+	z-index: -4;
 }
 
 
@@ -174,6 +181,7 @@ h1{
 	position : fixed;
 	left : 30%;
 	top : 15%;
+	z-index: -4;
 }
 
 .formulario{
@@ -196,6 +204,8 @@ h1{
   -webkit-border-radius: 7px;
   border-radius:         7px;
 }
+
+
 /* Links */
 
 a {
@@ -310,6 +320,7 @@ footer {
   position:fixed;
   text-align: center;
   bottom: 0.25%;
+  left : 15%;
   z-index: 9;
   
 }
@@ -499,7 +510,7 @@ height: 4em;
 color: #EEE;
 font-size: 20px;
 font-weight: 300;
-width: 40%;
+width: 60%;
 
 margin-bottom: 20px;
 line-height: 22px;
@@ -514,6 +525,10 @@ background: rgba(255, 255, 255, 0.7);
 }
 
 
+#post{
+	padding-left: 25%;
+}
+
 #all_user{
 	
    color: #EEE;
@@ -523,10 +538,10 @@ background: rgba(255, 255, 255, 0.7);
    margin-bottom: 20px;
    line-height: 22px;
    margin-right: 20%;
-   margin-left: 20%;
+   margin-left: 30%;
    
    padding: 10px;
-   position: relative;
+   position: absolute;
    text-align: left;
  
    -webkit-border-radius: 20px;
