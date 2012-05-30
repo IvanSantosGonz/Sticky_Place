@@ -1,5 +1,5 @@
 
-#global {width:100%; margin:4px auto;}
+#global {width:1440px; margin:4px auto;}
 
 
 body {
@@ -93,6 +93,88 @@ h1{
 	display:block;
 }
 
+#cloud01{
+	position : fixed;
+	left : 110%;
+	top : 10%;
+}
+
+
+#cloud02{
+	position : fixed;
+	left : 1070%;
+	top : 30%;
+}
+
+#cloud03{
+	position : fixed;
+	left : 90%;
+	top : 25%;
+}
+
+#cloud04{
+	position : fixed;
+	left : 10%;
+	top : 25%;
+}
+
+#cloud11{
+	position : fixed;
+	left : 550%;
+	top : 20%;
+}
+
+
+#cloud12{
+	position : fixed;
+	left : 150%;
+	top : 35%;
+}
+	
+#cloud13{
+	position : fixed;
+	left : 5%;
+	top : 15%;
+
+}
+
+
+#cloud14{
+	position : fixed;
+	left : 1300%;
+	top : 15%;
+
+}
+
+
+	
+#cloud21{
+	position : fixed;
+	left : 990%;
+	top : 20%;
+
+}
+
+
+#cloud22{
+	position : fixed;
+	left : 440%;
+	top : 30%;
+}
+
+
+#cloud23{
+	position : fixed;
+	left : 840%;
+
+}
+
+
+#cloud24{
+	position : fixed;
+	left : 30%;
+	top : 15%;
+}
 
 .formulario{
 	padding-left: 63%;
