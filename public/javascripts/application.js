@@ -11,15 +11,68 @@
    function init()
    {
 	   cloudMove();
+
 	}
 
-   function cloudMove()
-   {
-		 $("#cloud").animate({"left": "-=50px"}, "slow");
-	     cloudMove();
-   }
-    
-   }
-  
 
- 
+
+
+})
+
+  setInterval(function cloudMove()
+   {
+   		$('#cloud01').animate({
+    		left: '+=300',
+  			}, 50000);
+		$('#cloud02').animate({
+    		left: '+=100',
+  			}, 50000);
+  		$('#cloud11').animate({
+    		left: '+=300',
+  			}, 50000);
+		$('#cloud12').animate({
+    		left: '+=300',
+  			}, 50000);
+  		$('#cloud14').animate({
+    		left: '+=100',
+  			}, 50000);
+		$('#cloud21').animate({
+    		left: '+=300',
+  			}, 50000);
+		$('#cloud22').animate({
+    		left: '+=300',
+  			}, 50000);
+  		$('#cloud23').animate({
+    		left: '+=500',
+  			}, 50000);
+  			
+  })
+  
+  setInterval(function cloudMove2()
+   {
+   		$('#cloud01').animate({
+    		left: '-=300',
+  			}, 50000);
+		$('#cloud02').animate({
+    		left: '-=100',
+  			}, 50000);
+  		$('#cloud11').animate({
+    		left: '-=300',
+  			}, 50000);
+		$('#cloud12').animate({
+    		left: '-=300',
+  			}, 50000);
+  		$('#cloud14').animate({
+    		left: '-=100',
+  			}, 50000);
+		$('#cloud21').animate({
+    		left: '-=300',
+  			}, 50000);
+		$('#cloud22').animate({
+    		left: '-=300',
+  			}, 50000);
+		$('#cloud23').animate({
+    		left: '-=500',
+  			}, 50000);
+  })
+  
