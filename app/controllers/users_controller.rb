@@ -24,10 +24,13 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @title = "Sign up"
+    @user.photos.build
   end
   
   def create
     @user = User.new(params[:user])
+    @user.photos.build
+  
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to Sticky Place"
@@ -40,11 +43,13 @@ class UsersController < ApplicationController
   
   def edit
      @title = "Edit user"
+     
   end
 
   def update
     @user = User.find(params[:id])
-    if @user.update_attributes(params[:user])
+    
+     if @user.update_attributes(params[:user])
       flash[:success] = "Profile updated."
       redirect_to @user
     else
