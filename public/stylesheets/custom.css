@@ -349,19 +349,19 @@ td.main {
 }
 
 td.sidebar {
-	
-  width: 30%;
+  position:absolute;
   padding: 3em;
-  vertical-align: top;
+  top: 16%;
+  left: 20%;
 }
 
-#post-it_home{
+#nube_home{
 	position: absolute;
 	z-index: -1;
-	right: 20.5%;
-	top: 8%;
-	width: 15%; 
-	height: 25%;
+	top: 15%;
+	left: 18%;
+	height: 20%;
+	width: 20%;
 }
 
 #post-it_profile{
@@ -474,6 +474,7 @@ table.microposts tr td.micropost {
   border-top: 1px solid #ccc;
   vertical-align: top;
   padding-top: 10px;
+  
 }
 
 table.microposts tr td.micropost span.timestamp {
@@ -492,11 +493,24 @@ div.user_info a {
 
 div.user_info span.user_name {
   position: absolute;
+  color: #000;
 }
 
 div.user_info span.microposts {
   font-size: 80%;
+  color: #000;
 }
+
+#following{
+color: #000;	
+	
+}
+
+#followers{
+color: #000;	
+	
+}
+
 
 form.new_micropost {
   margin-bottom: 2em;
