@@ -204,6 +204,11 @@ h1{
   border-radius:         7px;
 }
 
+.file_field{
+  -moz-border-radius:    7px;
+  -webkit-border-radius: 7px;
+  border-radius:         7px;
+}
 
 /* Links */
 
@@ -386,6 +391,10 @@ div.field, div.actions {
 
 #submit{
 	padding-left : 25%;
+}
+
+#feed{
+	padding-left : 10%;
 }
 
 /* Form's Errors */
