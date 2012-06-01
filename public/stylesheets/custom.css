@@ -190,7 +190,6 @@ h1{
 
 
 
-
 .enviar{
 	background-color: #99cc33;
 	color:#000077;
@@ -385,6 +384,9 @@ div.field, div.actions {
   margin-bottom: 10px;
 }
 
+#submit{
+	padding-left : 25%;
+}
 
 /* Form's Errors */
 
