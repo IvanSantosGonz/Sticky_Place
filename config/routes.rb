@@ -21,7 +21,8 @@ SampleApp::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
   match '/signin',  :to => 'pages#signin'
-
+  match '/faq', :to => 'pages#faq'
+  
   root :to => 'pages#home'
   
   

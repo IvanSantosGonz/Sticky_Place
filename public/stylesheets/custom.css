@@ -46,6 +46,16 @@ section {
 
 }
 
+#base2{
+	
+    position:fixed;
+	z-index: -5;
+	top: 0%;
+	left: -250px;
+	width:160%;
+	opacity: 0.2;
+}
+
 #fair{
 
 	position: fixed;
@@ -452,6 +462,133 @@ background: rgba(255, 255, 255, 0.7);
 #feed{
 	position: absolute;
 
+}
+
+
+.question h1 {
+	font-size: 20px;
+}
+
+.question {
+
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+    width: 30%;
+
+
+    margin-bottom: 20px;
+    line-height: 20px;
+
+    padding: 15px;
+   
+    text-align: left;
+   -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#q1{
+   position: absolute;
+   top : 20%;
+   left: 20%;
+}
+
+#q2{
+   position: absolute;
+   top : 41%;
+   left: 20%;
+}
+
+#q3{
+   position: absolute;
+   top : 65%;
+   left: 20%;
+}
+#q4{
+   position: absolute;
+   top : 20%;
+   left: 60%;
+}
+#q5{
+   position: absolute;
+   top : 50%;
+   left: 60%;
+}
+
+.faq {
+	z-index: 0;
+	top: 0%;
+	left: -250px;
+	width:160%;
+	opacity: 0.8;
+	background-image: url "images/flechas.png"
+	
+	
+}
+
+#box1{
+
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+    width: 40%;
+    height: 10%;
+
+    margin-bottom: 20px;
+    line-height: 22px;
+
+    padding: 25px;
+    position: relative;
+    top : 20%;
+    left: 30%;
+    text-align: left;
+   -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#box2{
+
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+    width: 40%;
+    height: 10%;
+
+    margin-bottom: 20px;
+    line-height: 22px;
+
+    padding: 25px;
+    position: relative;
+    top : 23%;
+    left: 30%;
+    text-align: left;
+   -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+#box3{
+
+    color: #000;
+    font-size: 17px;
+    font-weight: 400;
+    width: 40%;
+    height: 10%;
+
+    margin-bottom: 20px;
+    line-height: 22px;
+
+    padding: 25px;
+    position: relative;
+    top : 23%;
+    left: 30%;
+    text-align: left;
+   -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 
