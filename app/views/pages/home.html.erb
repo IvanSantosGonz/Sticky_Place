@@ -9,15 +9,18 @@
                 <%= render 'shared/stats' %>
         
              </td>
-             <td class="main">
-                <h1 class="micropost">New Sticky Note</h1>
-                <%= render 'shared/micropost_form' %>
+             
+                
                
-             </td>
+            
              
           </tr>
       	</table>
+      	<h1 class="micropost">New Sticky Note</h1>
+          <%= render 'shared/micropost_form' %>
+          <div id = feed_back>
       	 <%= render 'shared/feed' %>
+      	 </div>
   	<% else %>
 			<p> 
 				¿No eres un Sticky User aún? </p>

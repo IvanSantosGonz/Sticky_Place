@@ -29,9 +29,7 @@ section {
   background: #fff;
 }
 
-h1{
-	text-align: center;
-}
+
 
 
 
@@ -396,11 +394,36 @@ div.field, div.actions {
 }
 
 #submit{
-	padding-left : 25%;
+	padding-left : 0%;
+	padding-top : 0%;
 }
 
+#feed_back{
+
+color: #EEE;
+font-size: 15px;
+font-weight: 300;
+width: 40%;
+height: 70%;
+
+margin-bottom: 20px;
+line-height: 22px;
+
+padding: 25px;
+position: absolute;
+top : 13%;
+left: 47%;
+text-align: left;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.7);
+}
+
+
 #feed{
-	padding-left : 10%;
+	position: absolute;
+	padding-left : 0%;
+	padding-top : 0%;
 }
 
 /* Form's Errors */
@@ -471,7 +494,11 @@ ul.users {
 
 /* Microposts view */
 h1.micropost {
-  margin-bottom: 0.3em;
+position : fixed;
+padding-top: 18%;
+padding-left: 2%;
+text-align: left;
+font-family: Arial, "MS Trebuchet", sans-serif;
 }
 
 table.microposts {
@@ -483,15 +510,17 @@ table.microposts tr {
 }
 
 table.microposts tr td.gravatar {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #000;
   vertical-align: top;
   width: 50px;
 }
 
 table.microposts tr td.micropost {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #000;
   vertical-align: top;
   padding-top: 10px;
+  color: #000;
+  
   
 }
 
@@ -532,6 +561,7 @@ color: #000;
 
 form.new_micropost {
   margin-bottom: 2em;
+  padding-left:0%;
 }
 
 
@@ -539,10 +569,10 @@ form.new_micropost textarea {
 
 height: 4em;
 
-color: #EEE;
-font-size: 20px;
-font-weight: 300;
-width: 60%;
+color: #000;
+font-size: 15px;
+font-weight: 100;
+width: 30%;
 
 margin-bottom: 20px;
 line-height: 22px;
@@ -550,7 +580,7 @@ line-height: 22px;
 padding: 10px;
 position: relative;
 text-align: left;
-text-shadow: 0 1px 2px black;
+text-shadow: 0 1px 2px white;
 -webkit-border-radius: 20px;
 border-radius: 20px;
 background: rgba(255, 255, 255, 0.7);
@@ -558,7 +588,8 @@ background: rgba(255, 255, 255, 0.7);
 
 
 #post{
-	padding-left: 25%;
+	padding-left: 0%;
+	padding-top: 35%;
 }
 
 #all_user{
@@ -583,6 +614,20 @@ background: rgba(255, 255, 255, 0.7);
 }
 
 
+.previous_page{
+	color : #000;
+}
+
+.next_page{
+	color : #000;
+}
+
+.pagination{
+	color: #000;
+	padding: 10px;
+}
+
+
 .apple_pagination {
   background: #0DD227;
   border: 1px solid #e5e5e5;
@@ -596,8 +641,10 @@ background: rgba(255, 255, 255, 0.7);
 }
 
 .apple_pagination .disabled {
-    color: #aaaaaa; 
+    color: #000; 
 }
+
+
 
 .apple_pagination .em {
     font-style: normal;
