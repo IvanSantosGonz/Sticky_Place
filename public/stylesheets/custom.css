@@ -1,6 +1,9 @@
 
 #global {width:1440px; margin:4px auto;}
 
+h1 {
+	text-align: center;
+}
 
 body {
 	background-color: #4ecdc4;
@@ -189,7 +192,26 @@ section {
 
 
 .formulario{
-	padding-left: 63%;
+	padding-left: 73%;
+	padding-top: 18%;
+	
+	color: #000;
+	font-size: 15px;
+	font-weight: 300;
+	width: 15%;
+	height: 33%;
+
+	margin-bottom: 20px;
+	line-height: 22px;
+
+	padding: 25px;
+	position: absolute;
+	top : 35%;
+	left: 57%;
+	text-align: left;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -373,6 +395,13 @@ td.sidebar {
 	opacity: 0.8;
 }
 
+#caja_logo{
+	position: fixed;
+	height: 50%;
+	padding-left: 0%;
+	padding-top: 7%;
+}
+
 #post-it_profile{
 	position: absolute;
 	z-index: -1;
@@ -404,12 +433,12 @@ color: #EEE;
 font-size: 15px;
 font-weight: 300;
 width: 40%;
-height: 70%;
+height: 75%;
 
 margin-bottom: 20px;
 line-height: 22px;
 
-padding: 25px;
+padding: 5px;
 position: absolute;
 top : 13%;
 left: 47%;
@@ -422,8 +451,31 @@ background: rgba(255, 255, 255, 0.7);
 
 #feed{
 	position: absolute;
-	padding-left : 0%;
-	padding-top : 0%;
+
+}
+
+
+
+
+.datos{
+
+color: #000;
+font-size: 20px;
+font-weight: 400;
+width: 20%;
+height: 40%;
+
+margin-bottom: 20px;
+line-height: 22px;
+
+padding: 25px;
+position: fixed;
+top : 23%;
+left: 40%;
+text-align: left;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.7);
 }
 
 /* Form's Errors */
@@ -594,7 +646,7 @@ background: rgba(255, 255, 255, 0.7);
 
 #all_user{
 	
-   color: #EEE;
+   color: #000;
    width: 40%;
    height: auto;
 

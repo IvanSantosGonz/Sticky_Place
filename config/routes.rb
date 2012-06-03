@@ -17,6 +17,7 @@ SampleApp::Application.routes.draw do
 
   match '/signup',  :to => 'users#new'
   match '/contact', :to => 'pages#contact'
+  match '/policy', :to => 'pages#policies'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
   match '/signin',  :to => 'pages#signin'

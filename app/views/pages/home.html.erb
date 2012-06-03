@@ -1,5 +1,4 @@
-<div class="container_12">
-	
+	<div class= "container_12 " > 
 	<% if signed_in? %>
        <table class="front" summary="For signed-in users">
           <tr>
@@ -21,11 +20,12 @@
           <div id = feed_back>
       	 <%= render 'shared/feed' %>
       	 </div>
+      	  </div>
   	<% else %>
-			<p> 
-				¿No eres un Sticky User aún? </p>
-				<a class="button">Registrate</a>			
-			<div class= "grid_3 push_8 " > 
+  	</div>
+  			<img src="/images/caja_logo.png" alt="logo welcome" id = "caja_logo" />
+		
+			<div class= "formulario " > 
 				<%= form_for(:user, :url => users_path, :html => { :multipart => true }) do |f| %>
 
   					<div>
