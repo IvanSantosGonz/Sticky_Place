@@ -19,7 +19,7 @@ SampleApp::Application.configure do
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
-
+Paperclip.options[:command_path] = "/usr/local/bin/"
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 end

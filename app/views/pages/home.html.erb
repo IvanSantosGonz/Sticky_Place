@@ -40,13 +40,10 @@
     					<%= f.label :password_confirmation, "Confirmation" %><br />
     					<%= f.password_field :password_confirmation , :placeholder => "repeat password" , :style=>'width: 140px',:class => "field"%>
   					</div>
-  					<div>
-  				       <%= f.file_field :avatar %></p>
-                    
-                    </div>
-  					<div class="actions" id = "submit">
-    					<%= f.submit "Sign up" ,:class => "enviar"%>
-  					</div>
+  					
+  					  <div class="actions">
+   							 <%= f.submit "Update" ,:class => "enviar"%>
+  						</div>
 				<% end %>
 
 			</div>
