@@ -3,6 +3,19 @@
        <table class="front" summary="For signed-in users">
           <tr>
           	<img src="/images/nube.png" alt="nube" id= "nube_home" />
+          	<a href="<%= user_path(current_user) %>">
+<div id="user_photo">
+	<h1>
+        <%= (current_user).name %>
+     </h1>	
+   <% if !(current_user).photos.empty? %>
+        <% for photo in (current_user).photos %>
+	             <%= image_tag photo.avatar.url(:medium) %>
+	     <% end %>
+	  <% else %>
+	      <img src="/images/missing_medium.png" alt="photo" id = "photo_medium" /> 
+	  <% end %> 
+</div>
           	<td class="sidebar">
                 <%= render 'shared/user_info' %>
                 <%= render 'shared/stats' %>

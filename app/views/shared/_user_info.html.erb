@@ -1,12 +1,4 @@
 <div class="user_info">
-  <a href="<%= user_path(current_user) %>">
-   <% if !(current_user).photos.empty? %>
-        <% for photo in (current_user).photos %>
-	             <%= image_tag photo.avatar.url(:thumb) %>
-	     <% end %>
-	  <% else %>
-	      <img src="/images/missing_thumb.png" alt="photo" id = "photo_medium" /> 
-	  <% end %> 
     <span class="user_name">
       <%= current_user.name %>
     </span>
@@ -14,4 +6,4 @@
       <%= pluralize(current_user.microposts.count, "micropost") %>
     </span>
   </a>
-</div>z
+</div>
