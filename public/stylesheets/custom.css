@@ -210,7 +210,7 @@ section {
 	color: #888;
 	font-size: 30px;
 	font-weight: 500;
-	width: 15%;
+	width: 20%;
 	height: 43%;
 
 	margin-bottom: 20px;
@@ -219,7 +219,7 @@ section {
 	padding: 25px;
 	position: absolute;
 	top : 35%;
-	left: 57%;
+	left: 60%;
 	text-align: left;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
@@ -228,11 +228,19 @@ section {
 
 
 .formulario .field{
-	
 	font-weight: 300;
 	font-size: 20px;
+	left: 10%;
 }
 
+.form{
+	padding-left: 15%;
+	
+}
+
+#env{
+	padding-left: 15%;
+}
 
 .enviar{
 	background-color: #99cc33;
