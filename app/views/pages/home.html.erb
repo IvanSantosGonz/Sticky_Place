@@ -25,20 +25,20 @@
 				<%= form_for(:user, :url => users_path, :html => { :multipart => true }) do |f| %>
 
   					<div>
-    					<%= f.label :name %><br />
-  						<%= f.text_field :name , :placeholder => "Your name" , :style=>'width: 140px' ,:class => "field"%>
+    					<%= f.label :name,:class => "label" %><br />
+  						<%= f.text_field :name , :placeholder => "Your name" , :style=>'width: 190px' ,:class => "field"%>
   					</div>
   					<div >
-   						 <%= f.label :email %><br />
-   						 <%= f.text_field :email , :placeholder => "Your email" , :style=>'width: 140px',:class => "field"%>
+   						 <%= f.label :email ,:class => "label" %><br />
+   						 <%= f.text_field :email , :placeholder => "Your email" , :style=>'width: 190px',:class => "field"%>
   					</div>
   					<div >
-  						<%= f.label :password %><br />
-    					<%= f.password_field :password , :placeholder => "Your password" , :style=>'width: 140px',:class => "field"%>
+  						<%= f.label :password ,:class => "label" %><br />
+    					<%= f.password_field :password , :placeholder => "Your password" , :style=>'width: 190px',:class => "field"%>
   					</div>
   					<div>
-    					<%= f.label :password_confirmation, "Confirmation" %><br />
-    					<%= f.password_field :password_confirmation , :placeholder => "repeat password" , :style=>'width: 140px',:class => "field"%>
+    					<%= f.label :password_confirmation, "Confirmation" ,:class => "label"  %><br />
+    					<%= f.password_field :password_confirmation , :placeholder => "repeat password" , :style=>'width: 190px',:class => "field"%>
   					</div>
   					
   					  <div class="actions">

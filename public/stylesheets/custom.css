@@ -1,5 +1,5 @@
 
-#global {width:1440px; margin:4px auto;}
+#global {width:100%}
 
 h1 {
 	text-align: center;
@@ -204,15 +204,17 @@ section {
 .formulario{
 	padding-left: 73%;
 	padding-top: 18%;
-	
-	color: #000;
-	font-size: 15px;
-	font-weight: 300;
+	font-family: 'Cabin Sketch';
+  	font-style: normal;
+  	font-weight: bold;
+	color: #888;
+	font-size: 30px;
+	font-weight: 500;
 	width: 15%;
-	height: 33%;
+	height: 43%;
 
 	margin-bottom: 20px;
-	line-height: 22px;
+	line-height: 35px;
 
 	padding: 25px;
 	position: absolute;
@@ -224,6 +226,12 @@ section {
 	background: rgba(255, 255, 255, 0.7);
 }
 
+
+.formulario .field{
+	
+	font-weight: 300;
+	font-size: 20px;
+}
 
 
 .enviar{
@@ -383,9 +391,26 @@ table.profile {
   margin-bottom: 0;
 }
 
+
+.profile .main {
+  padding-top: 0%;
+  margin-bottom: 0;
+}
+
+
+
 td.main {
   width: 70%;
   padding: 1em;
+}
+
+td.main h1{
+	text-align: left;
+	padding-left : 25%;
+	font-family: 'Cabin Sketch';
+  	font-style: normal;
+  	font-weight: 300;
+	color: #888; 
 }
 
 td.sidebar {
@@ -394,6 +419,27 @@ td.sidebar {
   top: 16%;
   left: 20%;
 }
+
+
+td.sidebar_profile {
+  position:absolute;
+  top: 73%;
+  left: 23%;
+}
+
+
+#nube_profile{
+	position: absolute;
+	z-index: -1;
+	top: 65%;
+	left: 16.5%;
+	height: 25%;
+	width: 25%;
+	opacity: 0.8;
+	
+}
+
+
 
 #nube_home{
 	position: absolute;
@@ -407,24 +453,14 @@ td.sidebar {
 
 #caja_logo{
 	position: fixed;
-	height: 50%;
-	padding-left: 0%;
-	padding-top: 7%;
+	height: 65%;
+	padding-left: 10%;
+	padding-top: 2%;
 }
 
-#post-it_profile{
-	position: absolute;
-	z-index: -1;
-	right: 14.5%;
-	top: 8%;
-	width: 15%; 
-	height: 25%;
-}
 
-.profile img.gravatar {
-  border: 1px solid #999;
-  margin-bottom: -15px;
-}
+
+
 
 /* User new form */
 
@@ -457,6 +493,9 @@ text-align: left;
 border-radius: 20px;
 background: rgba(255, 255, 255, 0.7);
 }
+
+
+
 
 
 #feed{
@@ -614,6 +653,38 @@ text-align: left;
 border-radius: 20px;
 background: rgba(255, 255, 255, 0.7);
 }
+
+
+#micropost_profile{
+	
+	color: #000;
+font-size: 15px;
+font-weight: 400;
+width: 40%;
+height: 75%;
+
+margin-bottom:5px;
+line-height: 25px;
+
+padding: 25px;
+padding-top: 5px;
+padding-bottom:5px;
+position: fixed;
+top : 13%;
+left: 50%;
+text-align: left;
+-webkit-border-radius: 20px;
+border-radius: 20px;
+background: rgba(255, 255, 255, 0.7);
+}
+
+
+#photo_profile{
+	position:absolute;
+	top: 20%;
+	left: 15%;
+}
+
 
 /* Form's Errors */
 
