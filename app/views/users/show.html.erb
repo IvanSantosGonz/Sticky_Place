@@ -6,10 +6,12 @@
       </h1>
       <img src="/images/nube.png" alt="nube" id= "nube_profile" />
       <ul id = "photo_profile">
-	       <% for photo in @user.photos %>
-	            <%= image_tag photo.avatar.url(:medium) %>
-		        
-	       <% end %>
+      	   
+      	   <% if !@user.photos.nil? %>
+      	      <% for photo in @user.photos %>
+	             <%= image_tag photo.avatar.url(:medium) %>
+		      <% end %>
+	       <% end %>   
       </ul>
       <%= render 'follow_form' if signed_in? %>
       <% unless @user.microposts.empty? %>

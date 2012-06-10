@@ -3,6 +3,7 @@ Factory.define :user do |user|
   user.email                 "mhartl@example.com"
   user.password              "foobar"
   user.password_confirmation "foobar"
+ 
 end
 
 Factory.sequence :name do |n|
@@ -18,4 +19,9 @@ end
 Factory.define :micropost do |micropost|
   micropost.content "Mi Micropost on Sticky Palce"
   micropost.association :user
+end
+
+Factory.define :photo do |photo|
+  photo.avatar_file_name "nil"
+  photo.association :user
 end

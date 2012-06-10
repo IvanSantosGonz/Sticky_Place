@@ -12,7 +12,7 @@ class PhotosController < ApplicationController
     @user = User.find(params[:user_id])
     @photo = @user.photos.find(params[:id])
     if @photo.update_attributes(params[:photo])
-       @user.photos.clear
+        @user.photos.clear
         @user.photos.build
       redirect_to  user_photo_url(@user, @photo), :notice => "Your photo has been updated."
     else
