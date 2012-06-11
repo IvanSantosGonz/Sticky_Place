@@ -1,3 +1,4 @@
+# Relationship of follower and followed's models
 class Relationship < ActiveRecord::Base
   attr_accessible :followed_id
 

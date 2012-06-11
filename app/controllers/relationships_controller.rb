@@ -1,3 +1,5 @@
+#  Relationships controller
+
 class RelationshipsController < ApplicationController
   before_filter :authenticate
 

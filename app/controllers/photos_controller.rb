@@ -12,17 +12,19 @@ class PhotosController < ApplicationController
     @user = User.find(params[:user_id])
     @photo = @user.photos.find(params[:id])
     if @photo.update_attributes(params[:photo])
-        @user.photos.clear
-        @user.photos.build
-      redirect_to  user_photo_url(@user, @photo), :notice => "Your photo has been updated."
+        @photo.clear
+        @photo.build
+        redirect_to  user_photo_url(@user, @photo), :notice => "Your photo has been updated."
     else
-      flash[:alert] = "Your photo couldn't be updated, please review the fields and try again."
-      render :action => :edit
+      error_photo
     end
   end
   
 
-  
+  def error_photo
+      flash[:alert] = "Your photo couldn't be updated, please review the fields and try again."
+      render :action => :edit
+  end
   
   
   

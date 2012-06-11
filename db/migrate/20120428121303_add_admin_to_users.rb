@@ -1,3 +1,4 @@
+# Here we add restriction to admin_user to user's table
 class AddAdminToUsers < ActiveRecord::Migration
   def self.up
     add_column :users, :admin, :boolean, :default => false

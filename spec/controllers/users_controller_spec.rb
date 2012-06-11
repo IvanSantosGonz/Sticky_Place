@@ -249,7 +249,7 @@ describe UsersController do
 
     describe "for non-signed-in users" do
 
-      it "should deny access to 'edit'" do
+      it "should deny access to 'edit' page" do
         get :edit, :id => @user
         response.should redirect_to(signin_path)
       end

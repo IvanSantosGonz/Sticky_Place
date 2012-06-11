@@ -1,8 +1,9 @@
+# Here we add the relationship to followers and followed 
 class CreateRelationships < ActiveRecord::Migration
   def self.up
-    create_table :relationships do |t|
-      t.integer :follower_id
-      t.integer :followed_id
+    create_table :relationships do |table|
+      table.integer :follower_id
+      table.integer :followed_id
 
       t.timestamps
     end

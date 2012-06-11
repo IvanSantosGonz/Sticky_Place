@@ -1,9 +1,10 @@
+# Here we add the user to photos's table
 class CreatePhotos < ActiveRecord::Migration
   def self.up
-    create_table :photos do |t|
-      t.references :user
+    create_table :photos do |table|
+      table.references :user
 
-      t.timestamps
+      table.timestamps
     end
   end
 

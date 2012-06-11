@@ -2,20 +2,7 @@ require 'spec_helper'
 
 describe RelationshipsController do
 
-  describe "access control" do
-
-    it "should require signin for create" do
-      post :create
-      response.should redirect_to(signin_path)
-    end
-
-    it "should require signin for destroy" do
-      delete :destroy, :id => 1
-      response.should redirect_to(signin_path)
-    end
-  end
-
-  describe "POST 'create'" do
+    describe "POST 'create'" do
 
     before(:each) do
       @user = test_sign_in(Factory(:user))

@@ -3,7 +3,7 @@ require 'spec_helper'
 describe MicropostsController do
   render_views
 
-  describe "access control" do
+  describe "access control(and relationship_controler)" do
 
     it "should deny access to 'create'" do
       post :create
