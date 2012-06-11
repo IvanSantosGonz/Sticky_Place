@@ -61,7 +61,8 @@ section {
 	position: fixed;
 	z-index: -3;
 	top: 85%;
-	left: 0px;
+	width:160%;
+	left: 0%;
 	width:100%;
 }
 
@@ -71,14 +72,14 @@ section {
 	position: fixed;
 	z-index: -2;
 	bottom: 5.5%;
-	right: 20%;
+	right: 15%;
 }
 
 #montaña_rusa{
 	position: fixed;
 	z-index: -2;
 	bottom: 6%;
-	left: 10%;
+	left: 8%;
 }
 
 
@@ -86,7 +87,7 @@ section {
 	position: fixed;
 	z-index: -2;
 	bottom: 6%;
-	left: 10%;
+	left: 8%;
 }
 #logo {
 	width: 40%;
@@ -219,7 +220,7 @@ section {
 	padding: 25px;
 	position: absolute;
 	top : 35%;
-	left: 60%;
+	left: 54%;
 	text-align: left;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
@@ -234,7 +235,7 @@ section {
 }
 
 .form{
-	padding-left: 15%;
+	padding-left: 10%;
 	
 }
 
@@ -462,10 +463,16 @@ td.sidebar_profile {
 #caja_logo{
 	position: fixed;
 	height: 65%;
-	padding-left: 10%;
+	padding-left: 5%;
 	padding-top: 2%;
 }
 
+#cartel_home{
+	position: fixed;
+	height: 36%;
+	left: 50.5%;
+	top: 4.2%;
+}
 
 
 
