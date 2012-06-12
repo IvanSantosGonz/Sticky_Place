@@ -1,32 +1,45 @@
 <table summary="Information about following/followers">
   <tr>
     <td class="main">
-      <h1><%= @title %></h1>
-
-      <% unless @users.empty? %>
+	 
+      <div id = "fondo_profile">
+      	 <div id = "tittle_f" >
+		<h1><%= @title %></h1>
+	  </div>
+      <ul id = "photo_profile">
+      	   
+      	   <% if !@user.photos.empty? %>
+      	      <% for photo in @user.photos %>
+	             <%= image_tag photo.avatar.url(:medium) %>
+		      <% end %>
+		   <% else %>
+		       <img src="/images/missing_medium.png" alt="photo" id = "photo_medium" /> 
+	       <% end %> 
+	         
+      	</ul>
+      </div>
+    </td>
+    <div id = "more_info"></div>
+    <td class="sidebar_profile_f">
+      <p id = "name_follow" ><%= @user.name %></p>
+      <br />
+      <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
+      <strong>Microposts</strong> <%= @user.microposts.count %>
+      <%= render 'shared/stats' %>
+    </td>
+  </tr>
+  </div>
+</table>
+<div class="apple_pagination" id ="f_user">
+<%= will_paginate %>
+   <% unless @users.empty? %>
         <ul class="users">
           <%= render @users %>
         </ul>
         <%= will_paginate @users %>
       <% end %>
     </td>
-    <td class="sidebar round">
-      <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
-      <strong>Microposts</strong> <%= @user.microposts.count %>
-      <%= render 'shared/stats' %>
-      <% unless @users.empty? %>
-        <% @users.each do |user| %>
-        <% if !user.photos.empty? %>
-           <% for photo in user.photos %>
-	             <%= image_tag photo.avatar.url(:thumb) %>
-	       <% end %>
-	    <% else %>
-	      <img src="/images/missing_thumb.png" alt="photo" id = "photo_medium" /> 
-	    <% end %> 
-      <% end %>
-      	     <% end %> 
 
-    </td>
-  </tr>
-</table>
+</div>  
+
+     
