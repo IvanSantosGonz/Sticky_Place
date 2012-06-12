@@ -1,5 +1,11 @@
 <li>
-  <%= gravatar_for user, :size => 30 %>
+  <% if !user.photos.empty? %>
+      <% for photo in user.photos %>
+	     <%= image_tag photo.avatar.url(:thumb) %>
+	  <% end %>
+  <% else %>
+      <img src="/images/missing_thumb.png" alt="photo" id = "photo_medium" /> 
+  <% end %> 
   <%= link_to user.name, user %>
   <% if current_user.admin? %>
   |

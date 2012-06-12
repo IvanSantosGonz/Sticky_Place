@@ -427,6 +427,7 @@ td.sidebar {
   padding: 3em;
   top: 16%;
   left: 20%;
+  z-index: 1;
 }
 
 
@@ -494,7 +495,7 @@ color: #EEE;
 font-size: 15px;
 font-weight: 300;
 width: 40%;
-height: 75%;
+height: 80%;
 
 margin-bottom: 20px;
 line-height: 22px;
@@ -819,8 +820,8 @@ background: rgba(255, 255, 255, 0.7);
 
 
 #micropost_profile{
-	
-	color: #000;
+
+color: #000;
 font-size: 15px;
 font-weight: 400;
 width: 40%;
@@ -959,14 +960,16 @@ table.microposts tr {
   height: 70px;
 }
 
-table.microposts tr td.gravatar {
-  border-top: 1px solid #000;
+table.microposts tr td.avatar {
+  border-top: 1px solid #aaa;
   vertical-align: top;
   width: 50px;
+ 
+  
 }
 
 table.microposts tr td.micropost {
-  border-top: 1px solid #000;
+  border-top: 1px solid #aaa;
   vertical-align: top;
   padding-top: 10px;
   color: #000;

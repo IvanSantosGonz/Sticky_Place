@@ -1,6 +1,12 @@
 <tr>
-  <td class="gravatar">
-    <%= link_to gravatar_for(feed_item.user), feed_item.user %>
+  <td class ="avatar">
+     <% if !(current_user).photos.empty? %>
+        <% for photo in (current_user).photos %>
+	             <%= image_tag photo.avatar.url(:thumb) %>
+	     <% end %>
+	  <% else %>
+	      <img src="/images/missing_thumb.png" alt="photo" id = "photo_thumb" /> 
+	  <% end %> 
   </td>
   <td class="micropost">
     <span class="user">

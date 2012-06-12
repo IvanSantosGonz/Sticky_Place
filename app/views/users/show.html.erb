@@ -7,11 +7,14 @@
       <img src="/images/nube.png" alt="nube" id= "nube_profile" />
       <ul id = "photo_profile">
       	   
-      	   <% if !@user.photos.nil? %>
+      	   <% if !@user.photos.empty? %>
       	      <% for photo in @user.photos %>
 	             <%= image_tag photo.avatar.url(:medium) %>
 		      <% end %>
-	       <% end %>   
+		   <% else %>
+		       <img src="/images/missing_medium.png" alt="photo" id = "photo_medium" /> 
+	       <% end %> 
+	         
       </ul>
       <%= render 'follow_form' if signed_in? %>
       <% unless @user.microposts.empty? %>

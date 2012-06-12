@@ -19,7 +19,7 @@
     <%= f.password_field :password_confirmation %>
   </div>
   <% for photo in @user.photos %>
-	 <%= link_to image_tag(photo.avatar.url) %>
+	 <%= link_to image_tag(photo.avatar.url(:medium)) %>
 	        
   <% end %>
   <%= f.fields_for :photos do |photo_fields| %>
