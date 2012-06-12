@@ -356,12 +356,14 @@ nav ul li a {
   padding: 0 5px;
   font-weight: bold;
   color:#99cc33;
+  z-index: -10;
 }
 
 
 nav ul li a:hover {
   text-decoration: underline;
   color: #AAFF5B;
+  z-index: -10;
   
 }
 /* Sign up button */
@@ -388,7 +390,6 @@ a.signup_button {
   -webkit-border-radius: 10px;
   border-radius:         10px;
 }
-
 
 
 .desc{
@@ -486,29 +487,16 @@ td.sidebar {
 
 td.sidebar_profile {
   position:absolute;
-  top: 73%;
-  left: 23%;
+  top: 79%;
+  left: 20%;
 }
-
-
-#nube_profile{
-	position: absolute;
-	z-index: -1;
-	top: 75%;
-	left: 16.5%;
-	height: 25%;
-	width: 25%;
-	opacity: 0.8;
-	
-}
-
 
 
 #nube_home{
 	position: absolute;
 	z-index: -1;
-	top: 15%;
-	left: 18%;
+	top: 40%;
+	left: 16%;
 	height: 20%;
 	width: 20%;
 	opacity: 0.8;
@@ -517,7 +505,7 @@ td.sidebar_profile {
 #caja_logo{
 	position: fixed;
 	height: 65%;
-	padding-left: 5%;
+	left: 8%;
 	padding-top: 2%;
 }
 
@@ -542,6 +530,32 @@ div.field, div.actions {
 	padding-top : 0%;
 }
 
+#submit_micropost{
+	padding-left : 25%;
+	padding-top : 14%;
+}
+
+#more_info{
+
+	color: #EEE;
+	font-weight: 300;
+	width: 32%;
+	height: 12%;
+
+	margin-bottom: 20px;
+	line-height: 22px;
+
+	padding: 5px;
+	position: absolute;
+	top : 76%;
+	left: 13%;
+	text-align: left;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+
 #feed_back{
 
 	color: #EEE;
@@ -562,9 +576,6 @@ div.field, div.actions {
 	border-radius: 20px;
 	background: rgba(255, 255, 255, 0.7);
 }
-
-
-
 
 
 #feed{
@@ -598,30 +609,14 @@ div.field, div.actions {
 
 #q1{
    position: absolute;
-   top : 20%;
+   top : 24%;
    left: 20%;
 }
 
-#q2{
-   position: absolute;
-   top : 41%;
-   left: 20%;
-}
-
-#q3{
-   position: absolute;
-   top : 65%;
-   left: 20%;
-}
 #q4{
    position: absolute;
-   top : 20%;
-   left: 60%;
-}
-#q5{
-   position: absolute;
-   top : 50%;
-   left: 60%;
+   top : 24%;
+   left: 55%;
 }
 
 .faq {
@@ -874,34 +869,70 @@ background: rgba(255, 255, 255, 0.7);
 
 #micropost_profile{
 
-color: #000;
-font-size: 15px;
-font-weight: 400;
-width: 40%;
-height: 75%;
+	color: #000;
+	font-size: 15px;
+	font-weight: 400;
+	width: 40%;
+	height: 75%;
 
-margin-bottom:5px;
-line-height: 25px;
+	margin-bottom:5px;
+	line-height: 25px;
 
-padding: 25px;
-padding-top: 5px;
-padding-bottom:5px;
-position: fixed;
-top : 13%;
-left: 50%;
-text-align: left;
--webkit-border-radius: 20px;
-border-radius: 20px;
-background: rgba(255, 255, 255, 0.7);
+	padding: 25px;
+	padding-top: 5px;
+	padding-bottom:5px;
+	position: fixed;
+	top : 13%;
+	left: 50%;
+	text-align: left;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 
 #photo_profile{
 	position:absolute;
 	top: 20%;
-	left: 15%;
+	left: 5%;
 }
 
+
+#fondo_profile{
+
+	color: #000;
+	font-size: 15px;
+	font-weight: 400;
+	width: 33%;
+	height: 60%;
+
+	margin-bottom:5px;
+	line-height: 25px;
+
+	padding-top: 5px;
+	padding-bottom:5px;
+	position: fixed;
+	top : 13%;
+	left: 13%;
+	text-align: left;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+#fondo_profile h1{
+	
+  text-align: left;
+  padding-left: 15%;
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 280%;
+  color: #888; 
+  position: absolute;
+  top: 3%;
+	
+}
 
 .tittle h1{
 	
@@ -997,12 +1028,16 @@ ul.users {
 }
 
 /* Microposts view */
-h1.micropost {
-position : fixed;
-padding-top: 18%;
-padding-left: 2%;
-text-align: left;
-font-family: Arial, "MS Trebuchet", sans-serif;
+.micropost h1{
+	position : fixed;
+	top: 48%;
+	left: 17%;
+	text-align: left;
+	font-family: 'Cabin Sketch';
+  	font-style: normal;
+	font-weight: normal;
+	color: #888;
+	
 }
 
 table.microposts {
@@ -1036,12 +1071,27 @@ table.microposts tr td.micropost span.timestamp {
   color: #666;
 }
 
-/*aqui*/
+#fondo_user_info{
+	text-align: center;
+    width: 20%;
+    height: 13%;
+    line-height: 22px;
+    padding: 25px;
+    position: absolute;
+    top : 15%;
+    left: 15%;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+	
+}
+
 div.user_info img {
-  top: 20%;
+  top: 15%;
   padding-right: 0.1em;
-  left: 15%;
-  position: relative;
+  left: -20%;
+  position: absolute;
 
 }
 
@@ -1051,8 +1101,16 @@ div.user_info a {
 }
 
 div.user_info span.user_name {
+  
+  text-align: left;
+  padding-left: 0%;
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 280%;
+  color: #888; 
   position: absolute;
-  color: #000;
+  top: 3%;
 }
 
 div.user_info span.microposts {
@@ -1079,23 +1137,25 @@ form.new_micropost {
 
 form.new_micropost textarea {
 
-height: 4em;
+	height: 4em;
 
-color: #000;
-font-size: 15px;
-font-weight: 100;
-width: 30%;
+	color: #aaa;
+	font-size: 15px;
+	font-weight: 100;
+	width: 20%;
+    top: 63%;
+    left: 15%;
+	margin-bottom: 10px;
 
-margin-bottom: 20px;
-line-height: 22px;
+	line-height: 22px;
 
-padding: 10px;
-position: relative;
-text-align: left;
-text-shadow: 0 1px 2px white;
--webkit-border-radius: 20px;
-border-radius: 20px;
-background: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+	position: absolute;
+	text-align: left;
+	text-shadow: 0 1px 2px white;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 

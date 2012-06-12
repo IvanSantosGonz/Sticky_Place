@@ -1,10 +1,10 @@
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
+     <div id = "fondo_profile">
      <h1>
         <%= @user.name %>
       </h1>
-      <img src="/images/nube.png" alt="nube" id= "nube_profile" />
       <ul id = "photo_profile">
       	   
       	   <% if !@user.photos.empty? %>
@@ -15,7 +15,8 @@
 		       <img src="/images/missing_medium.png" alt="photo" id = "photo_medium" /> 
 	       <% end %> 
 	         
-      </ul>
+      	</ul>
+      </div>
       <%= render 'follow_form' if signed_in? %>
       <% unless @user.microposts.empty? %>
       <div id = "micropost_profile">
@@ -26,8 +27,8 @@
       <% end %>
       </div>
     </td>
+    <div id = "more_info"></div>
     <td class="sidebar_profile">
-      <strong>Name</strong> <%= @user.name %><br />
       <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
       <strong>Microposts</strong> <%= @user.microposts.count %>
       <%= render 'shared/stats' %>

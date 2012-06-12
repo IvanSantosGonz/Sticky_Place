@@ -1,6 +1,4 @@
 <div class="user_info">
-<<<<<<< HEAD
-	
   <a href="<%= user_path(current_user) %>">
    <% if !(current_user).photos.empty? %>
         <% for photo in (current_user).photos %>
@@ -9,8 +7,6 @@
 	  <% else %>
 	      <img src="/images/missing_thumb.png" alt="photo" id = "photo_medium" /> 
 	  <% end %> 
-=======
->>>>>>> 24a021f2642c755bc561f684fbbf619beda2ad34
     <span class="user_name">
       <%= current_user.name %>
     </span>

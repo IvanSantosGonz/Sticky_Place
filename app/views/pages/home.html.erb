@@ -2,36 +2,26 @@
 	<% if signed_in? %>
        <table class="front" summary="For signed-in users">
           <tr>
-          	<img src="/images/nube.png" alt="nube" id= "nube_home" />
-          	<a href="<%= user_path(current_user) %>">
-<div id="user_photo">
-	<h1>
-        <%= (current_user).name %>
-     </h1>	
-   <% if !(current_user).photos.empty? %>
-        <% for photo in (current_user).photos %>
-	             <%= image_tag photo.avatar.url(:medium) %>
-	     <% end %>
-	  <% else %>
-	      <img src="/images/missing_medium.png" alt="photo" id = "photo_medium" /> 
-	  <% end %> 
-</div>
-          	<td class="sidebar">
-                <%= render 'shared/user_info' %>
-                <%= render 'shared/stats' %>
+          	<div id="fondo_user_info"></div>
+          		<img src="/images/nube.png" alt="nube" id= "nube_home" />
+          		<a href="<%= user_path(current_user) %>"></a> 
+           		<td class="sidebar">
+                	<%= render 'shared/user_info' %>
+                	<%= render 'shared/stats' %>
         
-             </td>
-             
+             	</td>
           </tr>
       	</table>
-      	<h1 class="micropost">New Sticky Note</h1>
+      	<div class="micropost">
+      	  <h1>New Sticky Note?</h1>
           <%= render 'shared/micropost_form' %>
           <div id = feed_back>
-      	 <%= render 'shared/feed' %>
-      	 </div>
+      	 	<%= render 'shared/feed' %>
       	  </div>
+      	</div>
+    </div>
   	<% else %>
-  	</div>
+  	
   			<img src="/images/caja_logo.png" alt="logo welcome" id = "caja_logo" />
 		    <img src="/images/cartel_home.png" alt="cartel" id = "cartel_home" />
 		    
