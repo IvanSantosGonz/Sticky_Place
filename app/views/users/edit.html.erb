@@ -1,32 +1,40 @@
-<h1>Edit user</h1>
+<div class = "tittle" >
+   <h1>Edit user</h1>
+</div>
+    
+<div class = "container_12" >
+   <div class= "formulario_edit " > 
+  		<%= form_for(@user, :html => { :multipart => true } ) do |f| %>
+  		<%= render 'shared/error_messages', :object => f.object %>
+  		<div class="field">
+    		<%= f.label :name %><br />
+    		<%= f.text_field :name %>
+  		</div>
+  		<div class="field">
+    		<%= f.label :email %><br />
+    		<%= f.text_field :email %>
+  		</div>
+  		<div class="field">
+    		<%= f.label :password %><br />
+    		<%= f.password_field :password %>
+  		</div>
+  		<div class="field">
+    		<%= f.label :password_confirmation, "Confirmation" %><br />
+    		<%= f.password_field :password_confirmation %>
+  		</div>
+  		<div class="actions">
+       		<%= f.submit "Update" ,:class => "enviar"%>
+  		</div>
+  	   </div>
+  		<div class="field_photo">
+  	 		<% for photo in @user.photos %>
+	 			<%= link_to image_tag(photo.avatar.url(:medium)) %>
+	    	<% end %>
+	    	<%= f.fields_for :photos do |photo_fields| %>
+	        	<p><%= photo_fields.file_field :avatar %></p>
+	  		<% end %>
+	  	  </div>
+  		
+	<% end %>
 
-<%= form_for(@user, :html => { :multipart => true } ) do |f| %>
-  <%= render 'shared/error_messages', :object => f.object %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <% for photo in @user.photos %>
-	 <%= link_to image_tag(photo.avatar.url(:medium)) %>
-	        
-  <% end %>
-  <%= f.fields_for :photos do |photo_fields| %>
-        <p><%= photo_fields.file_field :avatar %></p>
-  <% end %>
-  <div class="actions">
-    <%= f.submit "Update" ,:class => "enviar"%>
-  </div>
-<% end %>
-
+</div>

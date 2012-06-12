@@ -202,7 +202,7 @@ section {
 
 
 
-.formulario{
+.formulario {
 	padding-left: 73%;
 	padding-top: 18%;
 	font-family: 'Cabin Sketch';
@@ -228,11 +228,59 @@ section {
 }
 
 
+.formulario_edit {
+	padding-left: 73%;
+	padding-top: 18%;
+	font-family: 'Cabin Sketch';
+  	font-style: normal;
+  	font-weight: bold;
+	color: #888;
+	font-size: 30px;
+	font-weight: 500;
+	width: 20%;
+	height: 54%;
+
+	margin-bottom: 20px;
+	line-height: 35px;
+
+	padding: 25px;
+	position: absolute;
+	top : 25%;
+	left: 54%;
+	text-align: left;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
+	
+}
+
+
+
 .formulario .field{
 	font-weight: 300;
 	font-size: 20px;
 	left: 10%;
 }
+
+.field_photo{
+	padding-left: 73%;
+	padding-top: 18%;
+	
+	position: absolute;
+	font-weight: 300;
+	font-size: 20px;
+	left: 25%;
+	top: 25%;
+	
+	margin-bottom: 20px;
+	line-height: 35px;
+
+	padding: 25px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
+}
+
 
 .form{
 	padding-left: 10%;
