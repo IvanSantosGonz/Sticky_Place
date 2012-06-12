@@ -52,7 +52,7 @@ section {
 	z-index: -5;
 	top: 0%;
 	left: -250px;
-	width:160%;
+	width:180%;
 	opacity: 0.2;
 }
 
@@ -441,7 +441,7 @@ td.sidebar_profile {
 #nube_profile{
 	position: absolute;
 	z-index: -1;
-	top: 65%;
+	top: 75%;
 	left: 16.5%;
 	height: 25%;
 	width: 25%;
@@ -491,23 +491,23 @@ div.field, div.actions {
 
 #feed_back{
 
-color: #EEE;
-font-size: 15px;
-font-weight: 300;
-width: 40%;
-height: 80%;
+	color: #EEE;
+	font-size: 15px;
+	font-weight: 300;
+	width: 40%;
+	height: 78%;
 
-margin-bottom: 20px;
-line-height: 22px;
+	margin-bottom: 20px;
+	line-height: 22px;
 
-padding: 5px;
-position: absolute;
-top : 13%;
-left: 47%;
-text-align: left;
--webkit-border-radius: 20px;
-border-radius: 20px;
-background: rgba(255, 255, 255, 0.7);
+	padding: 5px;
+	position: absolute;
+	top : 13%;
+	left: 47%;
+	text-align: left;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -983,12 +983,18 @@ table.microposts tr td.micropost span.timestamp {
   color: #666;
 }
 
+/*aqui*/
 div.user_info img {
+  top: 20%;
   padding-right: 0.1em;
+  left: 15%;
+  position: relative;
+
 }
 
 div.user_info a {
   text-decoration: none;
+  
 }
 
 div.user_info span.user_name {
