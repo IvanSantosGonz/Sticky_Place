@@ -1020,6 +1020,7 @@ background: rgba(255, 255, 255, 0.7);
 	position:absolute;
 	left: 20%;
 	padding-left: 7px;
+	z-index: 5;
 }
 
 
@@ -1032,6 +1033,14 @@ background: rgba(255, 255, 255, 0.7);
   padding-bottom: 12px;
   margin-bottom: 20px;
   background-color: #f0f0f0;
+}
+
+#error2{
+position: absolute;	
+top: 25%;
+left: 36%;
+	
+	
 }
 
 #error_explanation h2 {

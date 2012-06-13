@@ -3,10 +3,10 @@
 </div>
     
 <div class = "container_12" >
-   <div class= "formulario_edit " > 
-  		<%= form_for(@user, :html => { :multipart => true } ) do |f| %>
+   	<%= form_for(@user, :html => { :multipart => true } ) do |f| %>
   		<%= render 'shared/error_messages', :object => f.object %>
-  		<div class="field">
+  	<div class= "formulario_edit " > 
+  	  		<div class="field">
     		<%= f.label :name %><br />
     		<%= f.text_field :name %>
   		</div>

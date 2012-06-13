@@ -1,32 +1,13 @@
-<h1> UPSSSS ERROOR </h1>
-
-<div class = "formulario">
+<div class = "tittle" >
+   <h1>Upss Error!</h1>
+</div>
 
 <%= form_for(@user, :html => { :multipart => true } ) do |f| %>
 
+<div id = "error2" >
+
    <%= render 'shared/error_messages', :object => f.object %>
-  <div >
-    <%= f.label :name %>
-    <%= f.text_field :name , :placeholder => "Your name" , :style=>'width: 140px',:class => "field"%>
-  </div>
-  <div >
-    <%= f.label :email %>
-    <%= f.text_field :email , :placeholder => "Your email" , :style=>'width: 140px',:class => "field"%>
-  </div>
-  <div >
-    <%= f.label :password %>
-    <%= f.password_field :password , :placeholder => "Your password" , :style=>'width: 140px',:class => "field"%><br />
-  </div>
-  <div >
-    <%= f.label :password_confirmation, "Confirmation" %><br/>
-    <%= f.password_field :password_confirmation , :placeholder => "repeat password" , :style=>'width: 140px',:class => "field"%>
-  </div>
-  <%= f.fields_for :photos do |photo_fields| %>
-	  	   <p><%= photo_fields.file_field :avatar %></p>
-  <% end %>
-  <div class="actions">
-    <%= f.submit "Sign up" ,:class => "enviar"%>
-  </div>
+</div>		
 <% end %>
 
 </div>
