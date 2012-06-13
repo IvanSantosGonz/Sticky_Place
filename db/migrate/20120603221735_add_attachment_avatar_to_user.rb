@@ -1,3 +1,4 @@
+# Add photo 
 class AddAttachmentAvatarToUser < ActiveRecord::Migration
   def self.up
     add_column :users, :avatar_file_name, :string

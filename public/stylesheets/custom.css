@@ -487,7 +487,7 @@ td.sidebar {
 
 td.sidebar_profile {
   position:absolute;
-  top: 63%;
+  top: 78%;
   left: 20%;
 }
 
@@ -524,6 +524,12 @@ td.sidebar_profile {
 div.field, div.actions {
   margin-bottom: 10px;
 }
+
+#submit_f{
+	padding-left : 55%;
+	padding-top : 68%;
+}
+
 
 #submit{
 	padding-left : 0%;
