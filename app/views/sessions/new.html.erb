@@ -1,20 +1,26 @@
-<h1>Sign in</h1>
+<div class = "tittle" >
+   <h1>Sign in</h1>
+</div>
 
-<div class="grid_4 push_6">
+<div class="formulario_signin">
 <%= form_for(:session, :url => sessions_path) do |f| %>
-	<div class="field">
-		<%= f.label :email %><br />
-		<%= f.text_field :email , :placeholder => "email" , :style=>'width: 140px' ,:class => "field" %>
-	</div>
-
-	<div class="field">
-		<%= f.label :password %><br />
-		<%= f.password_field :password , :placeholder => "password" , :style=>'width: 140px' ,:class => "field" %>
-	</div>
-
-	<div class="actions">
+	<div class = "form">
+   		<%= f.label :email ,:class => "label" %><br />
+   		<%= f.text_field :email , :placeholder => "Your email" , :style=>'width: 190px',:class => "field"%>
+  	</div>
+  	<div class = "form">
+  		<%= f.label :password ,:class => "label" %><br />
+    	<%= f.password_field :password , :placeholder => "Your password" , :style=>'width: 190px',:class => "field"%>
+  	</div>
+ 	<div class="actions" id = "env">
 		<%= f.submit "Sign in", :class => "enviar" %>
 	</div>
 <% end %>
 </div>
-<p>New user? <%= link_to "Sign up now!", signup_path %></p>
+	<img src="/images/caja_logo.png" alt="logo welcome" id = "caja_logo" />
+		    
+
+<p id = "new_user">New user? <%= link_to "Sign up now!", signup_path %></p>
+
+
+			    
